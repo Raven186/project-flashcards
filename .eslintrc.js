@@ -14,5 +14,10 @@ module.exports = {
     'comma-dangle': 0,
     'class-methods-use-this': 0,
     'no-use-before-define': 0,
+    'indent': "off",
+    'no-trailing-spaces': 'off',
+    'linebreak-style': 'off',
+    'no-multiple-empty-lines': 'off'
+
   },
 };
