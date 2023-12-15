@@ -1,52 +1,20 @@
-const inquirer = require('inquirer')
+// const inquirer = require('inquirer')
 
 inquirer.prompt([
-  { type: 'input', name: 'username', message: 'Как звать? ' },
+  { type: 'input', name: 'username', message: 'Знакомство: ' },
   {
     type: 'list',
-    name: 'Кем будешь?',
+    name: 'Какой был вопрос',
     massage: 'Тут у нас сам вопрос',
     choices: [
-      { name: 'Чушпан', value: 2, short: 'Валил бы ты отсюда' },
-      { name: 'Скорлупа', value: 1, short: 'Ну здарова' },
-      { name: 'Пацан', value: 0, short: 'Здарова, братан' },
-      { name: 'Смотрящий', value: 0, short: 'Моё уважение' },
-      
+      { name: 'вармант1', value: 2, short: 'молодец' },
+      { name: 'вариант2', value: 1, short: 'могло быть и лучше' },
+      { name: 'вариант3', value: 0, short: 'совсем не то' },
+
     ],
   }
 ],
-)then.(answers)=> console.log(([
-  { type: 'input', name: 'username', message: 'Как звать? ' },
-  {
-    type: 'list',
-    name: 'Кем будешь?',
-    massage: 'Тут у нас сам вопрос',
-    choices: [
-      { name: 'Чушпан', value: 2, short: 'Валил бы ты отсюда' },
-      { name: 'Скорлупа', value: 1, short: 'Ну здарова' },
-      { name: 'Пацан', value: 0, short: 'Здарова, братан' },
-      { name: 'Смотрящий', value: 0, short: 'Моё уважение' },
-      
-    ],
-  }
-])))
-
-
-// inquirer.prompt([
-//   {
-//     type: 'list',
-//     name: 'Какой был вопрос',
-//     massage: 'щещен амсугин',
-//     choices: [
-//       { name: 'кутахбас', value: 2, short: 'молод222ец' },
-//       { name: 'вариа321313нт2', value: 1, short: 'могло бы222ть и лучше' },
-//       { name: 'вариа23123нт3', value: 0, short: 'совсе222м не то' },
-
-      
-//     ],
-//   }
-// ],
-// )
+).then((answers) => console.log(answers));
 
 
 
