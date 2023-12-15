@@ -1,5 +1,5 @@
-function showQuestions(questions) {
-    console.log(questions);
+function showQuestions(phrase) {
+    console.log(phrase);
 }
 
 module.exports = { showQuestions };
