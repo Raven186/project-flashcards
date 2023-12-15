@@ -24,12 +24,12 @@ async function getQuestions() {
     {type: 'input', name: 'username', message: 'Введи имя:'},
     {
     type: 'list',
-    name: 'bonuses',
-    message: 'Ты понял все темы?',
+    name: 'bonuses1',
+    message: 'Что говорит JavaScript, когда его просят рассказать анекдот?',
     choices: [
-        { name: 'Всё понял', value: 5, short: 'молодец'},
-        { name: 'Половину понял', value: 3, short: 'молодец'},
-        { name: 'Ничего не понял', value: 0,  short: 'молодец'},
+        { name: 'Мой лучший анекдот - это когда async и await зашли в бар...', value: 5, short: 'А ты шаришь!' },
+        { name: 'У меня есть такой хороший анекдот про null, но он undefined', value: 5, short: 'Хорошее чувство юмора ;)' },
+        { name: 'Ничего', value: 0, short: 'Не смешно' },
         ],   
     },
     {
@@ -37,11 +37,21 @@ async function getQuestions() {
     name: 'bonuses2',
     message: 'Ты точно понял все темы?',
     choices: [
-        { name: 'Всё понял', value: 5 },
-        { name: 'Половину понял', value: 3 },
-        { name: 'Ничего не понял', value: 0 },
+        { name: 'Всё понял', value: 5, short: 'первый' },
+        { name: 'Половину понял', value: 3, short: 'первый' },
+        { name: 'Ничего не понял', value: 0, short: 'первый' },
         ],   
     },
+    {
+      type: 'list',
+      name: 'bonuses3',
+      message: 'Ты точно понял все темы?',
+      choices: [
+          { name: 'Всё понял', value: 5, short: 'первый' },
+          { name: 'Половину понял', value: 3, short: 'первый' },
+          { name: 'Ничего не понял', value: 0, short: 'первый' },
+          ],   
+      },
 ])
 }
 
