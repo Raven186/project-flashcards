@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "generate-quiz": "^1.0.0",
-    "inquirer": "^8.0.0",
+    "inquirer": "^8.2.6",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
